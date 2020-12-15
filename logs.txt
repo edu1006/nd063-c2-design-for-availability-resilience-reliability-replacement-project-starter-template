@@ -1,0 +1,23 @@
+timestamp,message
+1607894480190,2020-12-13T21:21:20.190127Z 0 [Warning] [MY-011069] [Server] The syntax '--relay-log-info-file' is deprecated and will be removed in a future release.
+1607894480192,2020-12-13T21:21:20.192366Z 0 [Warning] [MY-010101] [Server] Insecure configuration for --secure-file-priv: Location is accessible to all OS users. Consider choosing a different directory.
+1607894480193,2020-12-13T21:21:20.193203Z 0 [System] [MY-010116] [Server] /rdsdbbin/mysql/bin/mysqld (mysqld 8.0.20) starting as process 4729
+1607894480213,2020-12-13T21:21:20.213927Z 0 [Warning] [MY-010161] [Server] You need to use --log-bin to make --log-slave-updates work.
+1607894480259,2020-12-13T21:21:20.259309Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+1607894480268,2020-12-13T21:21:20.268339Z 1 [Warning] [MY-012191] [InnoDB] Scan path '/rdsdbdata/db/innodb' is ignored because it is a sub-directory of '/rdsdbdata/db/
+1607894482565,2020-12-13T21:21:22.565907Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+1607894482847,"2020-12-13T21:21:22.847445Z 0 [Warning] [MY-010075] [Server] No existing UUID has been found, so we assume that this is the first time that this server has been started. Generating a new UUID: 265e834a-3d89-11eb-844c-02007c1dbf19."
+1607894482850,2020-12-13T21:21:22.850162Z 0 [Warning] [MY-010161] [Server] You need to use --log-bin to make --binlog-expire-logs-seconds work.
+1607894482855,2020-12-13T21:21:22.855881Z 0 [Warning] [MY-013414] [Server] Server SSL certificate doesn't verify: unable to get issuer certificate
+1607894482892,2020-12-13T21:21:22.892099Z 0 [System] [MY-010931] [Server] /rdsdbbin/mysql/bin/mysqld: ready for connections. Version: '8.0.20'  socket: '/tmp/mysql.sock'  port: 3306  Source distribution.
+1607967520496,2020-12-14T17:38:40.496972Z 0 [Warning] [MY-011069] [Server] The syntax '--relay-log-info-file' is deprecated and will be removed in a future release.
+1607967520498,2020-12-14T17:38:40.498191Z 0 [Warning] [MY-010101] [Server] Insecure configuration for --secure-file-priv: Location is accessible to all OS users. Consider choosing a different directory.
+1607967520498,2020-12-14T17:38:40.498993Z 0 [System] [MY-010116] [Server] /rdsdbbin/mysql/bin/mysqld (mysqld 8.0.20) starting as process 4626
+1607967520563,2020-12-14T17:38:40.563876Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+1607967520572,2020-12-14T17:38:40.572574Z 1 [Warning] [MY-012191] [InnoDB] Scan path '/rdsdbdata/db/innodb' is ignored because it is a sub-directory of '/rdsdbdata/db/
+1607967522117,2020-12-14T17:38:42.117436Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+1607967522411,"2020-12-14T17:38:42.411696Z 0 [Warning] [MY-010075] [Server] No existing UUID has been found, so we assume that this is the first time that this server has been started. Generating a new UUID: 35578dbf-3e33-11eb-8348-0698674c0ab5."
+1607967522433,2020-12-14T17:38:42.433637Z 0 [Warning] [MY-013414] [Server] Server SSL certificate doesn't verify: unable to get issuer certificate
+1607967522471,2020-12-14T17:38:42.471955Z 0 [System] [MY-010931] [Server] /rdsdbbin/mysql/bin/mysqld: ready for connections. Version: '8.0.20'  socket: '/tmp/mysql.sock'  port: 3306  Source distribution.
+1607967692642,2020-12-14T17:41:32.642350Z 11 [Warning] [MY-010055] [Server] IP address '10.1.10.25' could not be resolved: Name or service not known
+1607967692644,2020-12-14T17:41:32.644077Z 11 [Warning] [MY-013360] [Server] Plugin sha256_password reported: ''sha256_password' is deprecated and will be removed in a future release. Please use caching_sha2_password instead'
