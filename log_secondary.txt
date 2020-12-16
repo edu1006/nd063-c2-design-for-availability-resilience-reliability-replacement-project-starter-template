@@ -1,0 +1,56 @@
+
+###LOG SECONDARY DATABASE(READ REPLICA)####
+
+
+eduardo@eduardo-Inspiron-7560:~/home/eduardo$ ssh -i "secondary-instance.pem" ec2-user@ec2-34-226-191-133.compute-1.amazonaws.com
+Last login: Wed Dec 16 04:11:11 2020 from 189.6.27.102
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux 2 AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-2/
+7 package(s) needed for security, out of 19 available
+Run "sudo yum update" to apply all updates.
+[ec2-user@ip-10-1-11-170 ~]$ mysql -h awsrds-database-1-serverless-database-capacity.c8rbrht1ycth.us-east-1.rds.amazonaws.com -P3306 -u admin -p
+Enter password: 
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MySQL connection id is 16
+Server version: 8.0.20 Source distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MySQL [(none)]> show databases; 
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| udacity            |
++--------------------+
+4 rows in set (0.00 sec)
+
+MySQL [(none)]> connect udacity; 
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Connection id:    17
+Current database: udacity
+
+MySQL [udacity]> show tables; 
++-------------------+
+| Tables_in_udacity |
++-------------------+
+| checklists        |
++-------------------+
+1 row in set (0.01 sec)
+
+MySQL [udacity]> INSERT INTO checklists (todo_id, task_id,todo) VALUES (2, 2, 'test 2 checklists');
+ERROR 1290 (HY000): The MySQL server is running with the --read-only option so it cannot execute this statement
+MySQL [udacity]> delete from checklists; 
+ERROR 1290 (HY000): The MySQL server is running with the --read-only option so it cannot execute this statement
+MySQL [udacity]> 
+
