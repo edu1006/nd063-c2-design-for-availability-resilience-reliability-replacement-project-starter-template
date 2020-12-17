@@ -1,0 +1,46 @@
+Last login: Thu Dec 17 17:52:24 2020 from 189.6.27.102
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux 2 AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-2/
+7 package(s) needed for security, out of 19 available
+Run "sudo yum update" to apply all updates.
+[ec2-user@ip-10-1-11-170 ~]$ mysql -h awsrds-database-1-serverless-database-capacity.c8rbrht1ycth.us-east-1.rds.amazonaws.com -P 3306 -u admin -p
+Enter password: 
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MySQL connection id is 9
+Server version: 8.0.20 Source distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MySQL [(none)]> connect udacity
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Connection id:    10
+Current database: udacity
+
+MySQL [udacity]> INSERT INTO checklists (todo_id, task_id,todo) VALUES (2, 2, 'test 2 checklists');
+Query OK, 1 row affected (0.02 sec)
+
+MySQL [udacity]> select * from checklists; 
++---------+---------+-------------------+--------------+
+| todo_id | task_id | todo              | is_completed |
++---------+---------+-------------------+--------------+
+|       1 |       1 | test  checklists  |            0 |
+|       2 |       2 | test 2 checklists |            0 |
++---------+---------+-------------------+--------------+
+2 rows in set (0.00 sec)
+
+MySQL [udacity]> delete from checklists; 
+Query OK, 2 rows affected (0.02 sec)
+
+MySQL [udacity]> select * from checklists; 
+Empty set (0.00 sec)
+
+MySQL [udacity]> 
+
